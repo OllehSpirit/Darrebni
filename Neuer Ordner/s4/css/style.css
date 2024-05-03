@@ -1,0 +1,125 @@
+body{height: 5000px;}
+/*opacity*/
+img{
+    width: 250px;
+    height: 150px;
+    opacity: 0.5;
+}
+img:hover{
+    opacity: 1;
+}
+/*position:static*/
+.mt{
+    background-color: aqua;
+    top: 20px;/*لم تتاثر بها*/
+    right: 20px;/*لم تتاثر بها*/
+    left: 20px;/*لم تتاثر بها*/
+    bottom: 20px;/*لم تتاثر بها*/
+}
+.t{
+    background-color:aqua;
+    margin-top: 20px;
+}
+/*position:relative*/
+/* .rel{
+    position: relative;
+    top: 30px;
+    background-color: blue;
+    left: -50px;
+} */
+/*possion:absolute*/
+.one{
+background-color: red;
+height: 100px;
+width: 200px;
+}
+.two{
+background-color: green;
+height: 100px;
+width: 200px;
+position: absolute;
+top: 0;
+}
+/*parent:relative child:absolute*/
+.parent{
+    background-color: blueviolet;
+    position: relative;
+    height: 150px;
+}
+.child{
+    background-color: wheat;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+}
+/*position:fixed*/
+/* .pf{
+position: fixed;
+background-image: url(../images/a5.jpg);
+width: 200px;
+height: 200px;
+} */
+/*position:sticky*/
+div.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+/*vertical navbar*/
+.vn{ 
+    width: 200px;
+    font-size: 28px;
+    background-color: gray;
+    list-style-type: none;
+    padding: 0;
+    line-height: 40px;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.vn .header{
+    background-color:#4CAF50;
+}
+/*horizintal navbar*/
+.hn{
+    list-style-type: none;
+}
+.hn li{
+    display: inline-block;
+    width: 10%;
+    height: 30px;
+    background-color: gray;
+    font-size: 28px;
+}
+.hn .header{
+    background-color:#4CAF50;
+}
+li:hover{
+    opacity: 0.5;
+}
+/*dropdown*/
+.dropdown{
+    position: relative;
+    font-size: 30px;
+    width:25%;
+}
+span{
+    background-color: #cae8ca;
+    border: 1px solid #4CAF50;
+    padding: 0 10px ;
+    border-radius: 20px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:  yellowgreen;
+    border: 1px solid gray;
+    padding: 5px;
+    
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}

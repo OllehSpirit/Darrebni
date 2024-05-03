@@ -1,0 +1,75 @@
+/*problem inline-block*/
+.parent{
+    background-color: red;
+}
+.parent div{
+    display: inline-block;
+    background-color: blue;
+    width: 25%;/*صار في هوامش خارجية*/
+}
+/*float*/
+.parent-float{
+    background-color: gray;
+}
+.child{
+    padding-top: 10px;
+    text-align: center;
+    background-color: aqua;
+    width: 20%;
+    float: left;
+    height: 200px;
+    border: 1px solid black;
+}
+.clear{
+    clear: both;
+}
+.image{
+    float: right;
+}
+/*task*/
+.header{
+    margin-top: 250px;
+}
+.header,.footer{
+    background-color: gray;
+    font-size: x-large;
+    color: azure;
+    padding-top: 30px;
+    padding-left: 10px;
+    height: 90px;
+}
+.inside-con,.section{
+    float: left;
+}
+.inside-con div{
+    background-color: rgb(48, 48, 205);
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+/*flex*/
+.flex{
+    background-color: gray;
+    height: 200px;
+    font-size: x-large;
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction:column-reverse ; */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.flex div{
+    background-color: red;
+    width: 200px;
+    height: 40px;
+    color: aliceblue;
+    text-align: center;
+}
+
+

@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    position: relative;
+}
+
+.header{
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerImg{
+    width: 50px;
+}
+
+.search{
+    background-color: green;
+    border: 1px solid green;
+    margin-left: -5px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #a8a8a8;
+    width: 30%;
+}
+.img{
+    width: 100%;
+}
+
+.btn{
+    background-color: #a8a8a8;
+    border: 1px solid black;
+    padding: 10px;
+    width: 10%;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    background-color: #d0d0d0;
+}
+.col1{
+    margin: 10px;
+
+}
+
+.foo{
+    display: flex;
+    justify-content: center;
+}
+.foo div{
+    margin: 10px;
+}
+
+.active{
+    background-color: green;
+    padding: 7px;
+}
+.num{
+    padding: 7px;
+}
+.num:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #333;
+    color: white;
+    
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+        
+}
+
+@media(max-width:800px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+        margin: 20px;
+    }
+}

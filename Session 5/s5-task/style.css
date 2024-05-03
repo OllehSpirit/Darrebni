@@ -1,0 +1,144 @@
+/* first way */
+
+/* .mouse_over{
+    background-color: blueviolet;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    font-size: 40px;
+    text-transform: capitalize;
+    border: 3px dashed darkgreen;
+
+}
+.parent{
+    position: relative;
+    margin-left: 20%;
+    display: inline-block;
+}
+.con{
+    display: none;
+    position: absolute;
+    background-color: bisque;
+    min-width: 900px;
+    z-index: 1;
+
+}
+.con div {
+    color: black;
+    padding: 12px 16px;
+    display: inline-block;
+    width: 200px;
+    background-color: aqua;
+    margin: 30px;
+    border: 3px dashed darkgreen;
+}
+
+.parent:hover .con{
+    display: block;
+}
+.parent:hover .mouse_over{
+    background-color: chocolate;
+}
+.two,.six{
+    height: 50px;
+}
+.one,.three,.four,.five{
+    height: 200px;
+}
+body{
+    background-color: aquamarine;
+}   */
+
+
+
+/* task using flex */
+ .parent{
+    background-color: blue;
+    padding:20px;
+    width: 60%;
+     display: none;
+    margin-top: 40px;
+    margin-left: 15%;
+    
+}
+.con{
+    background-color: aqua;
+    padding: 20px;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+.con div{
+    background-color: antiquewhite;
+    width: 30%;
+    border: 3px dashed darkred;
+    font-size:larger;
+    color: darkred;
+    padding: 5px;
+    
+}
+.big_parent:hover .parent{
+    display: block;
+
+}
+.three,.one{
+    height: 50px;
+
+}
+.six,.two,.five,.four{
+    height: 150px;
+}
+.one{
+    margin-top:101px;
+}
+h1{
+    text-transform: capitalize;
+    font-size: 50px;
+    color: blue;
+    background-color: cadetblue;
+    display: inline;
+    border: 3px dashed blue;
+    margin-left: 500px;
+    
+    
+    
+}
+.big_parent{
+    top: 50px;
+    display: inline;
+    position: relative;
+}
+
+h1:hover{
+    background-color: rgba(221, 78, 102, 0.703);
+    cursor: pointer;
+    border: 3px dashed rgb(227, 4, 104);
+
+} 
+body{
+    background-color: aquamarine;
+} 
+.one{
+    order: 6;
+}
+.six{
+    order: 1;
+}
+.three
+{
+    order:2;
+}
+.four{
+    order:3;
+}
+.five{
+    order: 4;
+}
+.two{
+    order: 5;
+}

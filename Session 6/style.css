@@ -1,0 +1,138 @@
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+/* flex-grow */
+.parent{
+    background-color: #f1f1f1;
+    display: flex;
+}
+.parent div{
+    background-color: rgb(8, 8, 90);
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+.three{
+    flex-grow: 8;
+}
+/*end flex-grow */
+/* flex-shrink */
+.parent1{
+    background-color: #f1f1f1;
+    display: flex;
+}
+.parent1 div{
+    background-color: rgb(14, 85, 18);
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    width: 500px;
+    height: 50px;
+}
+.four{
+    flex-shrink: 5;
+}
+/*end flex-shrink */
+/* order */
+.parent2{
+    background-color: #f1f1f1;
+    display: flex;
+}
+.parent2 div{
+    background-color: rgb(180, 170, 65);
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    width: 500px;
+    height: 50px;
+}
+.one2{
+    order: 3;
+}
+.four1{
+    order: -1;
+}
+.three2{
+    order: 4;
+}
+/*end order */
+/* flex-basis */
+.parent3{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+}
+.parent3 div{
+    background-color: rgb(92, 2, 2);
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+.one3{
+    flex-basis: 200px;
+}
+/*end flex-basis */
+/* align-self */
+.parent4{
+    background-color: #f1f1f1;
+    display: flex;
+    height: 150px;
+}
+.parent4 div{
+    background-color: rgb(59, 0, 69);
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    width: 200px;
+}
+.one4{
+    align-self: center;
+}
+/*end align-self */
+/* flex */
+.parent5{
+    background-color: #f1f1f1;
+    display: flex;
+}
+.parent5 div{
+    background-color: rgb(236, 83, 0);
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    width: 400px;
+    height: 50px;
+}
+.one5{
+    flex: 0 0 200px;
+}
+/*end flex */
+/* Flex Responsive */
+.parent6{
+    background-color: #f1f1f1;
+    display: flex;
+}
+.parent6 div{
+    background-color: rgb(0, 255, 213);
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    width: 400px;
+    height: 50px;
+}
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .parent6{
+      flex-direction: column;
+    }
+  }

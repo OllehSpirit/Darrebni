@@ -1,0 +1,160 @@
+/*task1*/
+/* *{margin: 0;
+padding: 0;}
+body{
+    height: 1000px;
+    position: relative;
+}
+.header{
+    display: flex;كتير ضروري اعطيا للاب الحاوي عال ul
+    justify-content: end;
+    align-items:center;
+    background-color: rgb(199, 199, 199);
+    position: sticky;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    top: 0;
+}
+.header ul{
+    list-style-type: none;
+    display: flex;
+}
+.header a{
+    padding: 10px;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+}
+.header a:hover{
+    background-color: rgb(153, 84, 217);
+
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.content div{
+    text-align: center;
+    margin-top: 10px;
+    gap: 10px;
+    background-color: rgb(219, 219, 219);
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+}
+p{
+    font-size: x-large;
+}
+.footer{
+    position: absolute;
+    bottom:0;
+    background-color: rgb(219, 219, 219);
+    color: white;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 20px;
+}
+@media (max-width:800px){
+    .content{
+        flex-direction: column;
+    }
+} */
+/*task2*/
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 1000px;
+}
+.header{
+    background-color:rgb(195, 195, 195);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 70px;
+}
+.search input{
+    border-radius:5px;
+}
+.search button{
+    /* font-size: large; */
+    background-color:green;
+    color:white;
+    margin-left: -5px;
+    border-radius:5px;
+}
+.content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.content div{
+    background-color:rgb(208, 208, 208);
+width: 300px;
+height: 350px;
+}
+.main{
+    height: 70px;
+    margin-top: 20px;
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 600px;
+}
+span{
+    font-size: x-large;
+    font-weight: 600;
+}
+.end{
+    margin: auto;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+.one{
+    background-color:green;
+    border-radius:10px;
+    border: 1px solid black;
+}
+.end{
+    margin-top: 20px;
+}
+.end div{
+    width: 70px;
+    text-align: center;
+    padding-top: 15px;
+}
+.end p{
+    font-size: x-large;
+}
+.end div:hover{
+    border: 1px solid black;
+    background-color: green;
+    border-radius:10px;
+}
+@media (max-width:800px){
+.header{
+    flex-direction: column;
+}
+.content{
+    flex-direction: column; }
+}
+.footer{
+    position: absolute;
+    bottom:0;
+    background-color: rgb(219, 219, 219);
+    color: white;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    font-size: x-large;
+    padding-top: 20px;
+}
+/*task3*/
