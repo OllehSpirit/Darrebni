@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 900;
+    height: 100px;
+    cursor: pointer;
+}
+
+.header::before{
+    content: '';
+    background-color: mediumvioletred;
+    position: absolute;
+    left: 50%;
+    width: 1%;
+    z-index: -1;
+}
+
+.header:hover::before{
+    transition-duration: 5s;
+    width: 100%;
+    height: 40px;
+    left:0;
+}
+

@@ -1,0 +1,58 @@
+
+.test1{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    /* animation-name: color;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards; */
+    animation: color 4s linear 2s 1 alternate both;
+}
+
+@keyframes color{
+    from{background-color: red;}
+    to{background-color: green;}
+}
+
+.test2{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    
+    position: relative;
+    top: 30;
+    left: 0;
+}
+
+@keyframes move{
+    0%{
+        left: 0%;
+        top: 0%;
+    }
+
+    25%{
+        left: 70%;
+        top: 0%;
+    }
+
+    50%{
+        left: 70%;
+        top: 30%;
+    }
+
+    75%{
+        left: 0%;
+        top: 30%;
+    }
+
+    100%{
+        left: 0%;
+        top: 0%;
+    }
+}

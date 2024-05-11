@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #17c5cb;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .square-left {
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    animation-name: m-base-l;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes m-base-l {
+    0%{
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    25%{
+      opacity: 1;
+      transform: scale(1);
+    }
+    50%{
+      transform: scaleY(6);
+    }
+    100%{
+       transform: scaleY(6) translate(-40px);
+    }
+  }
+  
+  .square-right {
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    animation-name: m-base-r;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes m-base-r {
+    0%{
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    25%{
+      opacity: 1;
+      transform: scale(1);
+    }
+    50%{
+      transform: scaleY(6);
+    }
+    100%{
+       transform: scaleY(6) translate(40px);
+    }
+  }
+  
+  .left{
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation-name: left;
+    animation-duration: .3s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    transform-origin: right top;
+  }
+  
+  @keyframes left{
+    0%{
+      transform: skewX(0);
+    }
+    25%{
+      transform: skewX(70deg);
+    }
+    50%{
+      transform: skewX(55deg);
+    }
+    75%{
+      transform: skewX(65deg);
+    }
+    100%{
+      transform: skewX(60deg);
+    }
+  }
+  .right{
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation-name: right;
+    animation-duration: .3s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+    transform-origin: right top;
+  }
+  
+  @keyframes right{
+    0%{
+      transform: skewX(0);
+    }
+    25%{
+      transform: skewX(-70deg);
+    }
+    50%{
+      transform: skewX(-55deg);
+    }
+    75%{
+      transform: skewX(-65deg);
+    }
+    100%{
+      transform: skewX(-60deg);
+    }
+  }

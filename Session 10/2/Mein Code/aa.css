@@ -1,0 +1,118 @@
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.right, .left{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+.right{
+    animation-name: moveRight;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+}
+.right2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation-name: moveRight2;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .25s;
+    transform-origin: top right;
+
+}
+
+.left2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation-name: moveLeft2;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-delay: .25s;
+    transform-origin: top right;
+}
+.left{
+    animation-name: moveLeft;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+
+}
+
+@keyframes moveLeft {
+    0%{
+        transform: scaleY(0.1);
+        opacity: 0;
+    }
+    50%{
+        transform: scaleY(5);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-50px) scaleY(5);
+    }
+}
+
+@keyframes moveRight {
+    0%{
+        transform: scaleY(0.1);
+        opacity: 0;
+    }
+    50%{
+        transform: scaleY(5);
+        opacity: 1;
+    }
+    100%{
+        /* transform: scaleY(5); */
+        transform: translateX(50px) scaleY(5);
+    }
+}
+
+@keyframes moveRight2 {
+    0%{
+    }
+    25%{
+        transform: skewX(-60deg)
+
+    }
+    50%{
+        transform: skewX(-70deg)
+        
+    }
+    75%{
+        transform: skewX(-50deg)
+
+    }
+    100%{
+        transform: skewX(-66deg)
+        
+    }
+}
+
+@keyframes moveLeft2 {
+    0%{
+    }
+    25%{
+        transform: skewX(60deg);
+    }
+    50%{
+        transform: skewX(70deg);
+        
+    }
+    75%{
+        transform: skewX(50deg);
+        
+    }
+    100%{
+        transform: skewX(66deg);
+        
+    }
+}

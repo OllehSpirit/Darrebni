@@ -1,0 +1,67 @@
+body{
+    background-color: rgb(68, 119, 170);
+}
+
+.main{
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 20%;
+    height: 500px;
+    margin: 20px;
+    
+}
+.img1 , .img2 , .img3, .img4{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 10px 10px 20px;
+}
+
+.img1::before{
+    content: 'Herbst';
+}
+.img2::before{
+    content: 'Winter';
+}
+.img3::before{
+    content: 'Frühling';
+}
+.img4::before{
+    content: 'Sommer';
+}
+
+.card div::before{
+
+    position: absolute;
+    background-image: linear-gradient(#585123,#ffe6a7);
+    width: 20%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 40px;
+    color: white;
+    border-radius: 0px 50px 0px 50px;
+    transform: rotateY(180deg);
+
+    z-index: -1;    	    
+}
+    
+.card:hover{cursor: pointer;}
+.card:hover div{
+    transform: rotateY(180deg);
+    transition-duration: 2s;
+    box-shadow: -10px 10px 20px;
+}
+
+.card:hover div::before{
+    width: 100%;
+}
+
