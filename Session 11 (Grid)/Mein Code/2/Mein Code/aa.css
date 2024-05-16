@@ -1,0 +1,20 @@
+.test{
+    background-color: #333;
+    display: grid;
+    height: 300px;
+    grid-template-areas:
+    'header header header'
+    'menu main right'
+    'menu footer footer'
+    ;
+
+
+}
+.test div{
+    background-color: #666;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+
+}

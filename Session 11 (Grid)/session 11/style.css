@@ -1,0 +1,179 @@
+/* grid template using auto */
+.cont{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: blueviolet;
+  padding: 10px;
+}
+.cont div{
+  background-color: brown;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/* grid template using repeat */
+.cont1{
+  display: grid;
+  grid-template-columns:repeat(2,2fr) repeat(2,1fr);
+  gap: 10px;
+  background-color: rgb(226, 43, 119);
+  padding: 10px;
+}
+.cont1 div{
+  background-color: rgb(116, 42, 165);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/* The grid-template-rows Property */
+.cont2{
+  display: grid;
+  grid-template-columns:auto auto auto;
+  /* height 80px for first row and 200px for second */
+  grid-template-rows: 80px 200px;
+  gap: 10px;
+  background-color: rgb(55, 43, 226);
+  padding: 10px;
+}
+.cont2 div{
+  background-color: rgb(42, 140, 165);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/* The justify-content Property */
+.cont3{
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  /* grid-template-columns: auto auto auto; */
+  justify-content: space-evenly;
+  gap: 10px;
+  background-color: rgb(43, 226, 141);
+  padding: 10px;
+}
+.cont3 div{
+  background-color: rgb(42, 140, 165);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/* The align-content Property */
+.cont4{
+display: grid;
+height: 400px;
+grid-template-columns: auto auto auto;
+align-content: center;
+gap: 10px;
+background-color: #2196F3;
+padding: 10px;
+}
+.cont4 div{
+  background-color: rgb(42, 140, 165);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/* The grid-column Property */
+.cont5{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: chartreuse;
+  padding: 10px;
+}
+.cont5 div{
+  background-color: darkgreen;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.cont5 .item2{
+  grid-column: 2 / 5;
+}
+.cont6{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: rgb(255, 187, 0);
+  padding: 10px;
+}
+.cont6 div{
+  background-color: rgb(100, 77, 0);
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+}
+.cont6 .item1{
+  grid-row: 1 / 4;
+}
+/* grid-area Property */
+.cont7{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: rgb(255, 187, 0);
+  padding: 10px;
+}
+.cont7 div {
+  background-color: rgb(100, 77, 0);
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+}
+.cont7 .item8{
+  grid-area: 1 / 2 / 5 / 6;
+}
+/* Example */
+.cont8{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: coral;
+  gap: 10px;
+  padding: 10px;
+}
+.cont8 div{
+  background-color: cornflowerblue;
+  text-align: center;
+  padding: 30px 0;
+}
+.cont8 .one{
+  grid-column: 1/4;
+}
+.cont8 .two {
+  grid-row: 2/4;
+}
+.cont8 .five{
+  grid-column: 2/4;
+}
+/* Using Grid Area */
+
+.cont9{
+  display: grid;
+  grid-template-areas: "header header header"
+  "men main right1"
+  "men foot foot";
+  background-color: coral;
+  gap: 10px;
+  padding: 10px;
+}
+.cont9 div{
+  background-color: cornflowerblue;
+  text-align: center;
+  padding: 30px 0;
+}
+.cont9 .one{
+  grid-area: header;
+}
+.cont9 .two{
+  grid-area:men;
+}
+.cont9 .three{
+  grid-area: main;
+}
+.cont9 .four{
+  grid-area: right1;
+}
+.cont9 .five {
+  grid-area: foot;
+}

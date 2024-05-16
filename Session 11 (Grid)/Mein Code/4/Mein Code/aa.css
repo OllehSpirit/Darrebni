@@ -1,0 +1,22 @@
+.test{
+    background-color: #333;
+    display: grid;
+    height: 600px;
+    grid-template-areas: 'h h h'
+    'b b c'
+    'd e e'
+    'f e e'
+    'g e e'
+    'a a a';
+
+
+
+}
+.test div{
+    background-color: #666;
+    color: white;
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

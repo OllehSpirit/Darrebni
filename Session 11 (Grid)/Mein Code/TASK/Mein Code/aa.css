@@ -1,0 +1,28 @@
+.main{
+    height: 720px;
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr auto auto;
+    
+
+    grid-template-areas:
+    'item1 item2 item2 . '
+
+    'item1 item3 item3 item4'
+
+    'item1 item5 item6 item7'
+
+    'item8 item9 item10 item11'
+
+    'item12 . . .'
+    ;
+
+
+}
+.main div{
+    background-color: #ccc;
+    color: black;
+    margin: 10px;
+    text-align: center;
+    padding: 7px;
+}
