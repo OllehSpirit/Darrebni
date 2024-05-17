@@ -1,0 +1,102 @@
+.header {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+    border-bottom: 1px solid white;
+
+    position: relative;
+    margin: auto;
+    color: white;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links div {
+    margin: 7px;
+}
+
+.logo {
+    margin: 7px;
+}
+
+.logo::before {
+    content: 'hello';
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    color: blue;
+
+    font-size: 10px;
+}
+
+
+.main {
+    background-image: url('./landing.jpg');
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000091;
+}
+
+.box{
+    position: absolute;
+    top: 40%;
+    color: white;
+    z-index: 1;
+
+    background-color: rgba(62, 62, 165, 0.653);
+    padding: 50px;
+    padding-left: 15%;
+}
+
+.box span{
+    position: relative;
+}
+
+.services{
+    position: relative;
+    top: 100vh;
+    text-align: center;
+    height: 100vh;
+}
+
+.services::before{
+    content: '_______';
+    position: absolute;
+    top: 20px;
+    left: 46.2%;
+}
+
+.services::after{
+    content: '_______';
+    position: absolute;
+    top: 20px;
+    left: 50.5%;
+}
+
+.circle{
+    position: absolute;
+    top: 32px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    left: 49.8%;
+}
