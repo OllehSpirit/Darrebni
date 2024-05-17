@@ -6,6 +6,7 @@
     --mainTitle: rgb(52, 52, 237);
     --subTitle:#999;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .header {
