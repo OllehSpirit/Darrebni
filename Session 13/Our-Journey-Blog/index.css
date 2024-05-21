@@ -10,24 +10,33 @@
 }
 
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 5px;
+    z-index: 10;
 }
 
 .container {
+    background: rgba(160, 160, 180, 0.5);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    
     width: 60%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
 
     padding: 10px;
+    padding-top: 25px;
     border-bottom: 1px solid white;
 
     margin: auto;
     color: white;
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 
 .icon {
@@ -85,7 +94,7 @@
     height: 4px;
     z-index: 1;
     background-color: var(--small);
-    transform: translateY(48px);
+    transform: translateY(45px);
 }
 
 .links a,
@@ -109,7 +118,7 @@
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 28px;
+        top: 23px;
         opacity: 0;
 
         transition: transform .5s, opacity 1s;
@@ -157,6 +166,14 @@
         background-color: var(--small);
     }
 
+}
+
+@media (max-width:500px) {
+    .container{
+        width: 95%;
+        margin-top: -5px;
+        border-radius: 0;
+    }
 }
 
 /*______________________________________________________________ M A I N_______________________________________________________ */
@@ -244,6 +261,7 @@
 /*______________________________________________________________SOUVENIRS_______________________________________________________ */
 .souvenir {
     text-align: center;
+    padding-top: 60px;
 }
 
 .title {
@@ -252,6 +270,7 @@
     padding: 20px;
     position: relative;
     display: inline-block;
+    z-index: -1;
 }
 
 .title::before {
@@ -280,7 +299,7 @@
     margin: auto;
     width: 30%;
     padding: 25px;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 
@@ -296,6 +315,7 @@
     animation: grid 1s;
     animation-fill-mode: forwards;
     position: relative;
+    z-index: -1;
 }
 
 .grid svg {
@@ -314,7 +334,7 @@
 .grid div p:last-child {
     width: 95%;
     color: var(--subTitle);
-    line-height: 2.2;
+    line-height: 2.1;
 }
 
 @keyframes grid {
@@ -347,7 +367,8 @@
 
 .gallery {
     text-align: center;
-    margin-top: 20px;
+    padding-top: 60px;
+
 }
 
 
@@ -356,6 +377,7 @@
     flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
+    position: relative;
 }
 
 .album .card {
@@ -395,6 +417,7 @@
 
     transform: translateY(100px);
     transition: .5s;
+
 }
 
 .album .card:hover .caption {
@@ -411,6 +434,7 @@
     position: relative;
     left: -8px;
     width: 100vw;
+    z-index: -1;
     /* height: 100vh; */
 }
 
@@ -435,6 +459,13 @@ video {
     padding-left: 0;
     padding-right: 0;
 }
+
+@media (max-width:1100px){
+    .aboutContainer{
+        padding-top: 65px;
+    }
+}
+
 @media (max-width:600px){
     .about .box{
         top: 35%;
@@ -446,7 +477,7 @@ video {
 /*______________________________________________________________REVIEW_______________________________________________________ */
 
 .review{
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
     
 }
@@ -459,6 +490,7 @@ video {
     display: flex;
     justify-content: space-around;
     width: 60%;
+    z-index: -1;
 }
 
 .reviewBox > div{
