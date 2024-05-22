@@ -212,7 +212,8 @@
     background-color: var(--mainColor);
     padding: 50px;
     padding-left: 20%;
-
+}
+.simpleTranslateX{
     transform-origin: left;
     transform: scaleX(0);
     animation: move 1s;
@@ -293,6 +294,19 @@
     border-radius: 50%;
     transform:translateY(55px);
 }
+.simpleTranslateXTitle{
+    transform: translateX(-100px);
+    opacity: 0;
+
+    animation: title 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes title{
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 .title + p {
     color: var(--subTitle);
@@ -302,6 +316,20 @@
     line-height: 1.5;
 }
 
+.simpleTranslateXTitle2{
+    transform: translateX(100px);
+    opacity: 0;
+
+    animation: title 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+@keyframes title2{
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 .grid {
     width: 60%;
@@ -311,12 +339,24 @@
     text-align: left;
     column-gap: 20px;
 
-    transform: translateY(100px);
-    animation: grid 1s;
-    animation-fill-mode: forwards;
+    
     position: relative;
     z-index: -1;
 }
+.simpleTranslateY{
+    transform: translateY(100px);
+    opacity: 0;
+    animation: grid 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes grid {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 
 .grid svg {
     width: 75px;
@@ -335,12 +375,6 @@
     width: 95%;
     color: var(--subTitle);
     line-height: 2.1;
-}
-
-@keyframes grid {
-    100% {
-        transform: translateY(0);
-    }
 }
 
 @media(max-width:1304px) {
@@ -378,6 +412,18 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+}
+
+.simpleAnimationOpacity{
+    opacity: 0;
+    animation: opa 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes opa{
+    100%{
+        opacity: 1;
+    }
 }
 
 .album .card {
@@ -549,6 +595,21 @@ video {
     position: relative;
     top: -20px;
 }
+
+.simpleTranslateY2{
+    transform: translateY(-100px);
+    opacity: 0;
+    animation: grid 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes grid {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .statistics p:first-child{
     text-align: center;
 }
