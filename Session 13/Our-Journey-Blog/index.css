@@ -19,9 +19,9 @@
 }
 
 .container {
-    background: rgba(160, 160, 180, 0.5);
+    background: rgb(109, 109, 197, .4);
     border-radius: 6px;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 12px 0 rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.5px);
     -webkit-backdrop-filter: blur(6.5px);
     
@@ -488,7 +488,7 @@ video {
 .reviewBox {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 60%;
     z-index: -1;
 }
@@ -616,23 +616,126 @@ video {
 
 /*______________________________________________________________CONTACT_______________________________________________________ */
 
+.contact{
+    padding-top: 58px;
+    text-align: center;
+    height: 100vh;
+}
 .contactContainer{
+    display: flex;
+    justify-content: center;
+}
+.contactBox{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left{
+    background-image: url('./Images/Contact.gif');
+    background-size: 150% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% ;
+    width: 26vw;
+    height: 26vw;
+
+    align-self: center;
+    border-radius: 50%;
+}
+
+.mid{
+    height: 100%;
+    border: 1px solid var(--subTitle);
+}
+
+.right{
+    width: 42%;
+}
+
+.right form input , .right form textarea{
+    display: inline-block;
+    width: 80%;
+    padding: 20px;
+    margin: 20px;
+    resize: none;
+}
+
+.right form button{
+    cursor: pointer;
+    width: 92%;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    background-color: var(--mainColor);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.right form button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 100%;
+    background-color: var(--mainTitle);
+    transform: rotate(7deg) translateY(100px);
+    transition: transform .2s;
+    z-index: -1;
+}
+.right form button:hover::before{
+    transform: rotate(7deg) translateY(27px) translateX(-2px);
+}
+
+.right form button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 101%;
+    height: 100%;
+    background-color: var(--mainTitle);
+    transform: rotate(7deg) translateY(-100px);
+    transition: transform .2s;
+    z-index: -1;
+}
+.right form button:hover::after{
+    transform: rotate(7deg) translateY(-27px) translateX(2px);
+}
+
+@media (max-width:800px){
+    .left{
+        display: none;
+    }
+    .mid{
+        display: none;
+    }
+    .right{
+        width: 100%;
+    }
+}
+
+/*_______________________________________________________________FOOTER_______________________________________________________ */
+
+.footerContainer{
     position: relative;
     margin-left: -8px;
     margin-bottom: -8px;
     width: 100vw;
 }
 
-.contact{
+.footer{
     padding-top: 50px;
     text-align: center;
     background-color: var(--mainColor);
     color: white;
     font-size: 20px;
     position: absolute;
-   
+    
     width: 100%;
-
+    
 }
 
 .social::before{
