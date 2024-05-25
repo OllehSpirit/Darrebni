@@ -1,0 +1,78 @@
+.animationName p:nth-child(1), .animationName h1:nth-child(1), .animationName h6{
+    opacity: 0;
+    transform: translateX(100px);
+
+    animation: animationName 1s;
+    animation-fill-mode: forwards;
+}
+
+.animationName p:nth-child(2), .animationName h1:nth-child(2){
+    opacity: 0;
+    transform: translateX(-100px);
+
+    animation: animationName 1s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+.animationName div:nth-child(1) h6{
+    animation-delay: 2s;
+}
+.animationName div:nth-child(2) h6{
+    animation-delay: 2.5s;
+}
+.animationName div:nth-child(3) h6{
+    animation-delay: 3s;
+}
+.animationName div:nth-child(4) h6{
+    animation-delay: 3.5s;
+}
+.animationName div:nth-child(5) h6{
+    animation-delay: 4s;
+}
+.animationName div:nth-child(6) h6{
+    animation-delay: 4.5s;
+}
+.animationName div:nth-child(7) h6{
+    animation-delay: 5s;
+}
+.animationName div:nth-child(8) h6{
+    animation-delay: 5.5s;
+}
+
+
+@keyframes animationName{
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.animationMe{
+    opacity: 0;
+    transform: scale(0);
+
+    animation: animationMe 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animationMe{
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animationSkills > div div:nth-child(2) span{
+
+    animation: animationSkills 2s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animationSkills{
+    0%{
+        width: 0%;
+    }
+}
