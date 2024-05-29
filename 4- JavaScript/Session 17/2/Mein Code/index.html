@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="./index.css"> -->
+
+</head>
+
+<body>
+  <script>
+
+    let test =' darrebni Frontend'
+    // 1
+    console.log(test.toLowerCase())
+
+    // 2
+    console.log(test.toUpperCase())
+
+    // 3
+    console.log(test.trim())
+
+    // 4
+    console.log(test.trim().startsWith('dar'))
+
+    // 5
+    console.log(test.endsWith('end'))
+
+    // 6
+    console.log(test.replace('Frontend','Backend'))
+
+    // 7
+    cnt=0
+    for(i=0;i<test.length;i++) {
+      if (test[i]=='e')cnt++
+    }
+    console.log('cnt '+cnt)
+
+    
+    // 8
+    console.log(test.trim().split(' '))
+
+    // 9
+    console.log(test.charAt(1).toUpperCase()+test.substring(2,10)+test.charAt(10).toUpperCase()+test.substring(11))
+    
+    // 10
+    console.log(test.trim().indexOf('Frontend'))
+    
+    // 11
+    console.log(test.includes('bn',6))
+  </script>
+</body>
+
+</html>
