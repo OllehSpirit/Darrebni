@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Session 20</title>
+  <link rel="icon" href="data:;base64,=">
+</head>
+
+<body>
+  <script>
+    // let num=[1,2,3,4]
+    // let result = num.reduce((total,element)=>{
+    //   return total+element
+    // },10)
+    // console.log(result)
+    
+    
+    // let arr=['ali', 'reem','kawthar']
+    // let result= arr.reduce((acc,value)=>{
+    //   return acc.length>value.length?acc:value
+    // })
+    // console.log(result)
+
+
+    // let arr=[[1,2],[3,4]]
+    // result = arr.flat()
+    //   result=arr.reduce((total,value)=>{
+    //     return total.concat(value)
+    //   })
+    // console.log(result)
+
+
+
+    // let arr=['@','k','@','A']
+    // let result= arr.filter((value)=>{
+    //   return value!='@'
+    // }).reduce((acc,value)=>{
+    //   return acc+=value
+    // })
+    // console.log(result)
+
+
+
+    // let arr=['apple','Banana','orange','apple']
+    // let static=[]
+    // let result= arr.map(value=>{
+    //   if(static.indexOf(value)==-1){
+    //     static.push(value,1)
+    //   }
+    //   else{
+    //     static[static.indexOf(value)+1]++
+    //   }
+    // })
+    // console.log(static)
+
+//     // Example array of strings
+// const fruits = ['apple', 'banana', 'orange', 'apple', 'orange', 'banana', 'banana'];
+
+// // Using reduce to count the occurrences of each fruit
+// const fruitCount = fruits.reduce((accumulator, currentValue) => {
+//   // If the fruit already exists in the accumulator, increment its count
+//   if (accumulator[currentValue]) {
+//     accumulator[currentValue]++;
+//   } else {
+//     // Otherwise, set its count to 1
+//     accumulator[currentValue] = 1;
+//   }
+//   return accumulator;
+// }, {});
+
+// console.log(fruitCount); // Output: { apple: 2, banana: 3, orange: 2 }
+
+
+let arr=[20,80,3]
+let result= arr.forEach(value=>{
+  console.log(`${value} is even ${value%2==0}`)
+})
+console.log(result)  //undefined
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
