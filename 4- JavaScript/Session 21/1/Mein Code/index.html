@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Session 21</title>
+  <link rel="icon" href="data:;base64,=">
+</head>
+
+<body>
+  <script>
+
+    // let arr=[5,10,14,4,3]
+    // let result=arr.find(ele=>{
+    //   return ele>10
+    // })
+    // console.log(result)
+
+
+
+
+    // let arr=[5,10,14,4,3]
+    // let result=arr.findIndex(ele=>{
+    //   return ele>10
+    // })
+    // console.log(result)
+
+
+
+
+    // const fun =(arr, num)=>{
+    //   return arr.find(element=>{
+    //     return element>num && element%2==0
+    //   })
+    // }
+    // let arr=[3,7,30,70,51,50,13]
+    // result = fun(arr,10)
+    // console.log(result)
+
+
+
+
+    // const isPrime = (element) => {
+
+    //   for (let i = element-1; i > 1; i--) {
+    //     if (element % i == 0)
+    //       return false
+    //   }
+    //   return true
+    // }
+
+    // const fun = (arr, num) => {
+    //   return arr.find(element => {
+    //     return element > num && isPrime(element)
+    //   })
+    // }
+    // let arr = [3, 7, 30, 70, 51, 50, 13]
+    // result = fun(arr, 10)
+    // console.log(result)
+
+
+
+
+
+    // let arr = [1,30,39,29,10,13]
+    // result = arr.some(element => {
+    //     return element<30
+    //   })
+    // console.log(result)
+
+
+
+
+    // let arr = [1,30,39,29,10,13]
+    // result = arr.every(element => {
+    //     return element<30
+    //   })
+    // console.log(result)
+
+
+
+
+
+    // let arr = ['apple','orange','abanana','amilk','elephant']
+    // result = arr.every(element => {
+    //   return element.startsWith('a') || element.startsWith('o') || element.startsWith('e') || element.startsWith('i') || element.startsWith('u')
+    // })
+
+    // result2 = arr.some(element => {
+    //   return element.length>7
+    // })
+    // console.log(result)
+    // console.log(result2)
+
+
+
+
+    let str = 'froonttenndd'
+    let result = str.split('').reduce((acc,element)=> {
+      if(acc.endsWith(element) ==false)
+        return acc+=element
+      return acc
+    })
+    console.log(result)
+
+  </script>
+</body>
+
+
+</html>
