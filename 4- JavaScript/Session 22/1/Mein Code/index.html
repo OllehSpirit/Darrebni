@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Session 22</title>
+  <link rel="icon" href="data:;base64,=">
+</head>
+
+<body>
+
+  <script>
+
+    // let myVar='email'
+
+    // let user={
+    //   userName:'AnasAttoum',
+    //   email:'AnasAttoum.12321@gmail.com',
+    //   address:{
+    //     add1:'Homs',
+    //     'add2':{
+    //       add21:'a',
+    //       add22:'b'
+    //       }
+    //   }
+    // }
+
+    // console.log(user)
+    // console.log(user.userName)
+    // console.log(user['userName'])
+
+    // console.log(user.myVar)
+    // console.log(user[myVar])
+
+    // console.log(user.address.add2.add22)
+
+
+
+
+    // let user = new Object({
+    //   age:23
+    // })
+    // console.log(user.age)
+
+
+
+
+    // let obj1 ={
+    //   prop1:1,
+    //   propFun1:function(){
+    //     return this.prop1
+    //   }
+    // }
+
+    // let obj2 ={
+    //   prop2:1,
+    //   propFun2:function(){
+    //     return this.prop2
+    //   }
+    // }
+
+    // let obj3 ={
+    //   prop3:3,
+    //   propFun3:()=>{
+    //     return this.prop3
+    //   }
+    // }
+
+    // let newObj=Object.assign(obj1,obj2,obj3)
+    // console.log(newObj)
+
+    // console.log(newObj.propFun2())
+
+
+
+
+
+    // let arr=[
+    //   {id:1 , name:'anas' , age :23},
+    //   {id:2 , name:'fadi' , age :23},
+    //   {id:3 , name:'mayyar' , age :23}
+    // ]
+
+    // let x=arr.map(value=>{
+    //   return {
+
+    //     'id':value.id,
+    //     'name': value.name.toUpperCase(),
+    //     'value':(value.age>25)?'Old':'Young'
+
+    //   }
+    // })
+    // console.log(x)
+
+
+
+
+    // let arr = [
+    //   { 'id': 2, 'name': 'Anas' },
+    //   { 'id': 4, 'name': 'Anas' },
+    //   { 'id': 6, 'name': 'Anas' },
+    //   { 'id': 8, 'name': 'Anas' }
+    // ]
+
+    // let result = arr.filter(value => {
+    //   return value.id != 4
+    // })
+
+    // console.log(result)
+
+
+
+
+
+    // let arr = [
+    //   { 'id': 2, 'name': 'Anas' },
+    //   { 'id': 4, 'name': 'Anas' },
+    //   { 'id': 6, 'name': 'Anas' },
+    //   { 'id': 8, 'name': 'Anas' }
+    // ]
+
+    // const fun = (num) => {
+    //   return arr.filter(value => {
+    //     return value.id == 4
+    //   })
+    // }
+    //   console.log(fun(4)[0])
+
+    // const fun = (num) => {
+    //   return arr.find(value => {
+    //     return value.id == 4
+    //   })
+    // }
+    //   console.log(fun(4))
+
+
+
+
+
+
+
+
+
+    // let arr = [
+    //   { 'id': 2, 'name': 'Anas' },
+    // ]
+
+    // let result = arr.filter(value => {
+    //   return value
+    // })
+
+    // console.log(result)
+
+
+
+  </script>
+
+  <div class="js">
+    JS <span>Div</span>&lt;span &gt;
+  </div>
+  <img src="s" alt="">
+  <a href="#">Google</a>
+
+
+  <script>
+    let myElement = document.querySelector('.js')
+    console.log(myElement.innerHTML)
+    console.log(myElement.textContent)
+    console.log(myElement.innerText)
+
+    myElement.innerHTML='<h1>hello</h1>'
+ 
+    console.log(document.images[0])
+    console.log(document.images[0].src)
+    console.log(document.images[0].getAttribute('src'))
+    console.log(document.images[0].setAttribute('src','hello')) //undefined
+    console.log(document.images[0].getAttribute('src'))
+    console.log(document.images[0].attributes)
+    console.log(document.images[0].hasAttribute('src'))
+    console.log(document.images[0].removeAttribute('src')) //undefined
+    console.log(document.images[0].hasAttribute('src'))
+    console.log(document.images[0].hasAttributes())
+  </script>
+
+</body>
+
+
+</html>
