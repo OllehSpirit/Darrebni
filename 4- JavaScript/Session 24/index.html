@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Session 24</title>
+  <link rel="icon" href="data:;base64,=">
+
+</head>
+
+<body>
+
+  <script>
+
+    // const arr=['Anas','Attoum','aa','bb','cc','dd']
+
+    // const [x,y,z='A',...m]=arr
+    // console.log("🚀 ~ x:", x)
+    // console.log("🚀 ~ y:", y)
+    // console.log("🚀 ~ z:", z)
+    // console.log("🚀 ~ m:", m)
+
+
+
+
+
+    // let c='Anas';
+    // let d='Attoum';
+    // [c,d]=[d,c]
+    // console.log(c)
+    // console.log(d)
+
+
+
+
+
+    // const arr= [['a','b'],['c','d']];
+    // [[,a],[,b]]= arr
+    // console.log("🚀 ~ a:", a)
+    // console.log("🚀 ~ b:", b)
+
+
+
+
+    // const writeInfo=(arr)=>{
+    //   [a,b,c]=arr
+    //   return `my name is ${a} my age is ${b} and my email is ${c}` 
+    // }
+
+    // console.log(writeInfo(['Anas',23,'email']))
+
+
+
+
+    // const person={
+    //   name:'Anas',
+    //   age:23,
+    //   email:'emailme'
+    // }
+
+    // const {name,email:e,age}=person
+    // console.log("🚀 ~ name:", name)
+    // console.log("🚀 ~ age:", age)
+    // console.log("🚀 ~ email:", e)
+
+
+
+
+
+
+
+    // const person = {
+    //   name: 'Anas',
+    //   age: 23,
+    //   email: 'emailme',
+    //   address:{
+    //     city:'home',
+    //     country:'syria'
+    //   }
+    // }
+    // const {address:add}=person
+    // console.log("🚀 ~ address:", add)
+
+
+
+
+
+
+    // let arr=[1,2,3,4,1,2,3,4]
+    // let set=new Set(arr)
+    // console.log(set)
+    // console.log(set.size)
+    // console.log(set.add('Anas'))
+    // console.log(set.has('Anas'))
+    // set.delete('Anas')
+    // console.log(set.has('Anas'))
+    // console.log(set)
+    // // set.clear()
+    // console.log(set)
+
+
+    // for(let x of set){
+    //   console.log(x)
+    // }
+
+
+
+
+
+
+
+    // const map=new Map();
+    // map.set('name','Anas')
+    // map.set('age',23)
+
+    // console.log(map)
+
+    // console.log(map.get('name'))
+    // console.log(map.has('name'))
+
+
+    // console.log('start for')
+    // for(let [x,y] of map){
+    //   console.log(x)
+    //   console.log(y)
+    // }
+
+
+
+
+
+    let arr = [1, 2, 2, 3, 4, 5, 5, 6]
+
+    let set = new Set(arr)
+
+    console.log("🚀 ~ set:", set)
+    console.log("🚀 ~ set:", set.has(3))
+    set.delete(4)
+    console.log("🚀 ~ set:", set)
+    set.forEach(value => {
+      console.log(value)
+    })
+
+
+
+    let map = new Map()
+    map.set('name', 'anas')
+    map.set('age', 23)
+    console.log(map)
+    console.log("🚀 ~ map:", map.has('age'))
+    console.log("🚀 ~ map:", map.get('age'))
+    map.delete('name')
+    console.log("🚀 ~ map:", map)
+    for (let [x, y] of map) {
+      console.log(x)
+      console.log(y)
+    }
+
+
+  </script>
+
+
+</body>
+
+
+</html>
