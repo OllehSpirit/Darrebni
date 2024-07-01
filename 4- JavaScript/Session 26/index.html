@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Session 26</title>
+  <link rel="icon" href="data:;base64,=">
+
+</head>
+
+<body>
+
+
+  <script>
+
+    // class Shaped {
+    //   constructor(name, color) {
+    //     this.name = name;
+    //     this.color = color;
+    //   }
+    //   getInfo() {
+    //     return `name ${this.name} color ${this.color}`
+    //   }
+    // }
+
+
+    // class Rectangle extends Shaped {
+    //   constructor(name, color, width, height) {
+    //     super(name, color)
+    //     this.width = width;
+    //     this.height = height;
+    //   }
+    //   getArea() {
+    //     return `Area ${this.width * this.height}`
+    //   }
+    // }
+
+    // let shape1 = new Shaped('shape1', 'red')
+    // console.log(shape1.getInfo())
+
+    // let shape2 = new Rectangle('shape2', 'black', 4, 5)
+    // console.log(shape2.getArea())
+
+
+
+
+
+
+
+    // let user = [
+    //   {
+    //     id: 1, name: 'Anas', age: 23, role: 'myrole',
+    //     address: {
+    //       add1: 'Homs',
+    //       add2: 'Homs2'
+    //     },
+    //     skills: ['skill1', 'skill2']
+    //   }
+    // ]
+
+
+
+    // const fun=(arr,x)=>{
+    //   return arr.filter(x)
+    // }
+    // console.log(fun(user,(x)=>x.age>20))
+
+
+
+
+
+
+    // const fun = (arr, x) => {
+    //   let arr2 = arr.find(x)
+
+    //   return {
+    //     ...arr2, name: arr2.name.toUpperCase(), fullAdd: {
+    //       ZIP: '0000'
+    //     }
+    //   }
+    // }
+    // console.log(fun(user, (x) => x.age > 20))
+
+
+  </script>
+
+
+
+
+
+
+  <input type="text">
+  <button type="submit" onclick="addTodo()">Submit</button>
+
+  <div id="container"></div>
+
+
+  <script>
+
+    input = document.querySelector('input')
+    button = document.querySelector('button')
+    container = document.getElementById('container')
+
+    const arr = []
+
+    const addTodo = () => {
+      container.innerHTML = ''
+      const task = {
+        name: input.value,
+        complete: false,
+        undo: false
+      }
+      arr.push(task)
+
+      localStorage.setItem('TASK', JSON.stringify(arr))
+
+      arr.forEach(value => {
+        container.innerHTML += `<div><span id='name'>${value.name}</span> ${(value.complete == false) ? '<button onclick="complete()">Complete</button>' : null}</div>`
+      })
+    }
+
+
+    function complete() {
+      name = document.getElementById('name')
+      
+    }
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

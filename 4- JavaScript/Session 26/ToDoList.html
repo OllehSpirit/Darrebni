@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Session 26 | ToDoList</title>
+  <link rel="icon" href="data:;base64,=">
+
+</head>
+
+<body>
+
+
+  <input type="text">
+  <button type="submit" onclick="addTodo()">Submit</button>
+
+  <div id="container"></div>
+
+
+  <script>
+
+    input = document.querySelector('input')
+    button = document.querySelector('button')
+    container = document.getElementById('container')
+
+
+    let loc = JSON.parse(localStorage.getItem('TASK')) || ''
+    if (loc) {
+      loc.forEach((value, index) => {
+        container.innerHTML +=
+          `
+        <div>
+          <span style=${(value.undo == true) ? 'text-decoration:line-through' : ''}>${value.name}</span>
+           ${(value.complete == true) ? `<button onclick=complete(${index})>Complete</button>` : ''}
+           ${(value.undo == true) ? `<button onclick=undo(${index})>Undo</button>` : `<button style=display:none onclick=undo(${index})>Undo</button>`}
+           <button onclick=del(${index})>Delete</button>
+        </div>
+           `
+      })
+    }
+
+
+    const addTodo = () => {
+      container.innerHTML = ''
+      const task = {
+        name: input.value,
+        complete: true,
+        undo: false
+      }
+
+      let loc = JSON.parse(localStorage.getItem('TASK')) || []
+      if (loc) {
+
+      }
+      loc.push(task)
+
+      localStorage.setItem('TASK', JSON.stringify(loc))
+
+
+      loc.forEach((value, index) => {
+        container.innerHTML +=
+          `
+        <div>
+          <span style=${(value.undo == true) ? 'text-decoration:line-through' : ''}>${value.name}</span>
+           ${(value.complete == true) ? `<button onclick=complete(${index})>Complete</button>` : ''}
+           ${(value.undo == true) ? `<button onclick=undo(${index})>Undo</button>` : `<button style=display:none onclick=undo(${index})>Undo</button>`}
+           <button onclick=del(${index})>Delete</button>
+        </div>
+           `
+      })
+
+      input.value = ''
+    }
+
+
+    function complete(i) {
+      let loc = JSON.parse(localStorage.getItem('TASK'))
+      loc[i].complete = false
+      loc[i].undo = true
+      localStorage.setItem('TASK', JSON.stringify(loc))
+
+      this.container.children[i].children[0].style.textDecoration = 'line-through'
+      this.container.children[i].children[1].style.display = 'none'
+      this.container.children[i].children[2].style.display = 'inline'
+    }
+
+
+    function undo(i) {
+      let loc = JSON.parse(localStorage.getItem('TASK'))
+      loc[i].complete = true
+      loc[i].undo = false
+      localStorage.setItem('TASK', JSON.stringify(loc))
+
+      this.container.children[i].children[0].style.textDecoration = 'none'
+      this.container.children[i].children[1].style.display = 'inline'
+      this.container.children[i].children[2].style.display = 'none'
+    }
+
+
+    function del(i) {
+      let loc = JSON.parse(localStorage.getItem('TASK'))
+      loc.splice(i, 1)
+      localStorage.setItem('TASK', JSON.stringify(loc))
+
+      this.container.children[i].style.display = 'none'
+    }
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

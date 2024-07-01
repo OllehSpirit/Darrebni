@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Session 25</title>
+  <link rel="icon" href="data:;base64,=">
+
+</head>
+
+<body>
+
+  <script>
+
+    // const arr1=[1,2,3]
+    // const arr2=[4,5,6]
+
+    // const merged=[...arr1,...arr2]
+    // console.log("🚀 ~ merged:", merged)
+
+
+
+
+
+
+    // obj1={a:1}
+    // obj2={...obj1}
+    // obj2.a=4
+    // // obj3=obj1
+    // // obj3.a=4
+
+    // console.log("🚀 ~ obj1:", obj1)
+    // console.log("🚀 ~ obj2:", obj2)
+    // console.log("🚀 ~ obj3:", obj3)
+
+
+
+
+
+
+    // arr=[1,2,3]
+    // const sum=(x,y,z)=>{
+    //   console.log(x+y+z)
+    // }
+    // sum(...arr)
+
+
+
+
+
+
+
+    // const arr1 = [1, 2, 3]
+    // const arr2 = [4, 5, 6]
+
+    // const merged = [...arr1, ...arr2]
+    // console.log(merged)
+
+
+    // copiedArray = [...merged]
+    // console.log(copiedArray)
+
+
+    // const obj1 = { name: 'Anas', age: 23 }
+    // const obj2 = { email: 'a@gmail', city: 'Homs' }
+
+    // const mergedObj={...obj1,...obj2}
+    // console.log("🚀 ~ mergedObj:", mergedObj)
+
+    // const copyObj={...mergedObj}
+    // console.log("🚀 ~ copyObj:", copyObj)
+
+
+
+
+
+
+
+
+    // console.log(Array.from('1234',function(n){
+    //   return +n + +n
+    // }))
+
+
+
+
+
+
+
+    // const fun = (arguments) => {
+    //   console.log(Array.from(arguments))
+    // }
+    // fun('Anas')
+
+
+
+
+
+
+
+    // arr=[1,2,3,4,5,6]
+    // console.log(arr.copyWithin(3,0))
+
+    // let arr=[1,2,3,4,5]
+    // console.log(arr.copyWithin(0,1,5))
+
+
+    // let arr2=[1,2,3,4,5,6,7,8]
+    // console.log(arr2.copyWithin(4,7,8))
+
+    // console.log(arr2.copyWithin(1,-2))
+
+    // console.log(arr2.copyWithin(1,-2,-1))
+
+
+
+
+
+    // function User(id, name, salary) {
+    //   this.id = id;
+    //   this.userName = name;
+    //   this.salary = salary + 1000;
+    // }
+
+    // let user1 = new User(1, 'Anas', 5000)
+    // let user2 = new User(2, 'Attoum', 7000)
+
+    // console.log(user1.id + ' ' + user1.userName + ' ' + user1.salary)
+
+
+
+
+
+
+
+    // class User {
+    //   constructor(id, name, salary) {
+    //     User.count++;
+    //     this.i = id;
+    //     this.n = name || 'Unknown';
+    //     this.s = salary < 6000 ? salary + 500 : salary;
+    //     this.msg = function () {
+    //       return `Your name ${this.n}, your salary ${salary}`
+    //     }
+    //   }
+
+    // }
+
+    // let user1 = new User(1, 'Anas', 5000)
+    // let user2 = new User(2, '', 7000)
+
+    // console.log(user1.i + ' ' + user1.n + ' ' + user1.s)
+    // console.log(user2.i + ' ' + user2.n + ' ' + user2.s)
+    // console.log(user1.msg())
+
+
+
+
+
+
+
+
+    // class User {
+    //   static count = 0;
+    //   constructor() {
+    //     User.count++;
+    //   }
+
+    //   static num() {
+    //     return this.count
+    //   }
+    // }
+
+    // let user1 = new User()
+    // let user2 = new User()
+
+    // console.log(User.num())
+
+
+
+
+
+
+    // class User {
+    //   count = 0;
+    //   constructor() {
+    //     this.count++;
+    //   }
+
+    //   num() {
+    //     return this.count
+    //   }
+    // }
+
+    // let user1 = new User()
+    // let user2 = new User()
+
+    // console.log(user1.num())
+
+
+
+
+
+
+    class User {
+      // private property
+      #e
+      constructor(id,name,salary) {
+        this.id = id;
+        this.userName = name;
+        this.#e = salary;
+      }
+
+      getSalary() {
+        return parseInt(this.#e)
+      }
+    }
+
+    class Admin extends User{
+      constructor(id,name,slary,permission){
+        super(id,name,slary);
+        this.p=permission;
+      }
+    }
+
+    let user1 = new User(1,'Anas','5000$')
+    console.log(user1.id+' '+user1.userName+' '+user1.salary)
+    console.log(user1.getSalary())
+
+    let admin1=new Admin(2,'Attoum',5000,'per')
+    console.log(admin1.id+' '+admin1.userName+' '+admin1.salary +' '+admin1.p)
+    console.log(user1.getSalary())
+
+
+  </script>
+
+
+</body>
+
+
+</html>
