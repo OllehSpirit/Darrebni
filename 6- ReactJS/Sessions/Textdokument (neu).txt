@@ -1,0 +1,7 @@
+npm run start                development
+
+npm run built                production
+
+
+
+npm run dev
