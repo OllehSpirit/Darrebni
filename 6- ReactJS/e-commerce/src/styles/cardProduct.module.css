@@ -1,0 +1,23 @@
+.container{
+    border-radius: 20px;
+    width:40vw;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container>div:nth-child(2){
+    width: 55%;
+}
+
+.description{
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.addToCart{
+    background-color: var(--primary);
+    color: white;
+}
